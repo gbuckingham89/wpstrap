@@ -1,0 +1,141 @@
+/*!
+Theme Name: WP Strap
+Theme URI: http://wpstrap.com/
+Description: WP Strap is an open-source WordPress theme using the Bootstrap framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to support WordPress features. It is still a work in progress and not all WordPress features are supported yet, however it will continually be expanded with new features and support for the latest versions of WordPress and Bootstrap as they’re released.
+Author: George Buckingham
+Author URI: http://georgebuckingham.com/
+Version: 0.1
+Tags: theme-options, custom-menu, fixed-width, right-sidebar, blue, white, gray
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/**
+ * Include bootstrap less files
+ */
+@import "bootstrap/bootstrap.less";
+@import "bootstrap/responsive.less";
+
+
+/**
+ * Handle navbar body padding + navbar with admin bar fix
+ */
+@media (min-width: 980px) {
+	body {
+		padding: 60px 0 20px 0;
+	}
+	body.admin-bar { 
+		padding-top: 88px
+	}
+}
+body.admin-bar .navbar { 
+	top: 28px
+}
+
+/**
+ * Generic classes
+ */
+.sep {
+	padding: 0 10px;
+}
+
+/**
+ * Header
+ */
+.navbar-search button.btn {
+	margin-top: 0;
+}
+
+/**
+ * Styling for text from the wysiwyg editor
+ */
+.wysiwyg img.alignleft {
+	float: left;
+	margin: 5px 10px 5px 0;
+}
+.wysiwyg img.alignright {
+	float: right;
+	margin: 5px 0 5px 10px;
+}
+.wysiwyg img.aligncenter {
+	float: none;
+	margin: 5px auto;
+	display: block;
+}
+.wysiwyg img {
+	.thumbnail;
+}
+
+/**
+ * Styling for sidebar and widgets
+ */
+#sidebar ul {
+	margin: 0;
+	list-style-type: none;
+}
+#sidebar ul ul {
+	margin: 0 0 25px 25px;
+	list-style-type: disc;
+}
+#sidebar .widget_calendar table {
+	.table;
+	.table-condensed;
+	caption {
+		font-weight: bold;
+		font-size: 15px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+}
+
+/**
+ * Styling the search form
+ */
+.form-search {
+	button, .search-query {
+		margin-bottom: 10px;
+	}
+	.search-query {
+		.input-block-level;
+	}
+}
+
+/**
+ * Styling for comments
+ */
+.comments-form input[type='submit'] {
+	.btn;
+	.btn-primary;
+	margin-top: 20px;
+}
+.comments-form textarea {
+	height: 100px;
+}
+
+.comments-list {
+	margin: 0;
+	list-style: none;
+}
+.comment-body {
+	margin-bottom: 30px;
+}
+.comment-body p {
+	margin: 6px 0 6px 20px;
+}
+.comment-awaiting-moderation {
+	color: @grayLight;
+}
+.comment-author {
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+.comment-meta {
+	margin: 0;
+}
+.comments-list ul {
+	margin: 0 0 0 50px;
+	list-style: none;
+}
+.comments-wrap .alert {
+	margin: 0;
+}
