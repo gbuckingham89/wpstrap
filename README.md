@@ -36,6 +36,10 @@ By default, a search box is shown on the right of the navbar. Through the WP Str
 WP Strap is widget ready - allowing you to add widgets to the sidebar through the WordPress admin area. Additional CSS rules have been added to ensure the default WordPress widgets display nicely.
 
 #Changelog
+##V0.2 - xx/xx/xxxx
+###Highlights
+- Fixed bug with menu which prevented dropdown from showing
+
 ##V0.1 - 28/08/2012
 ###Highlights
 - First release

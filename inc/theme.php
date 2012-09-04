@@ -72,6 +72,9 @@ function wpstrap_col_width( $col ) {
 	if( $col == 'main' ) {
 		echo 9;
 	}
+	elseif( $col == 'main-full' ) {
+		echo 12;
+	}
 	elseif( $col == 'sidebar' ){
 		echo 3;
 	}	
@@ -223,7 +226,12 @@ class WPStrap_Header_Menu_Walker extends Walker_Nav_Menu {
 			$attributes  = !empty( $item->title ) ? ' title="' . esc_attr( $item->title ) .'"' : '';
 			$attributes .= !empty( $item->target ) ? ' target="' . esc_attr( $item->target ) .'"' : '';
 			$attributes .= !empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) .'"' : '';
-			$attributes .= !empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : ' href="' . get_permalink($item) . '"';
+			if( $depth < 1 && $args->has_children ) {
+				$attributes .= !empty( $item->url ) ? ' href="#"' : ' href="' . get_permalink($item) . '"';
+			}
+			else {
+				$attributes .= !empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : ' href="' . get_permalink($item) . '"';
+			}
 			$attributes .= ( $depth < 1 && $args->has_children ) ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';			
 		}
 				
