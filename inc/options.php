@@ -5,6 +5,10 @@
 function wpstrap_options_groups() {
 	$groups = array(
 		array( 
+			'key' => 'generic', 
+			'title' => 'Generic Options' 
+		),
+		array( 
 			'key' => 'header', 
 			'title' => 'Navbar Options' 
 		),
@@ -26,6 +30,20 @@ function wpstrap_options_groups() {
  */
 function wpstrap_options( $key = false ) {
 	$options = array();
+	$options['generic'] = array(	
+		array(
+			'key' => 'sidebar_size',
+			'label' => 'Sidebar size',
+			'description' => '',
+			'default' => 'medium',
+			'type' => 'select',
+			'options' => array(
+				array( 'value' => 'small', 'label' => 'Small' ),
+				array( 'value' => 'medium', 'label' => 'Medium' ),
+				array( 'value' => 'large', 'label' => 'Large' )
+			)		
+		)
+	);
 	$options['header'] = array(	
 		array(
 			'key' => 'show_header_search',

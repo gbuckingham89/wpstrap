@@ -38,8 +38,9 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 #Changelog
 ##V0.2 - xx/xx/xxxx
 ###Highlights
-- Fixed bug with menu which prevented dropdown from showing
+- Added ability to change sidebar width
 - Added full width page template
+- Fixed bug with menu which prevented dropdown from showing
 
 ##V0.1 - 28/08/2012
 ###Highlights

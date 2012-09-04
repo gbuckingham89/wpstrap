@@ -69,15 +69,30 @@ register_nav_menu( 'header-menu', 'Header Menu' );
  * Calculates layout column widths
  */
 function wpstrap_col_width( $col ) {
-	if( $col == 'main' ) {
-		echo 9;
-	}
-	elseif( $col == 'main-full' ) {
+	
+	$sidebar_size = wpstrap_opt( 'sidebar_size' );
+	
+	if( $col == 'main-full' ) {
 		echo 12;
 	}
-	elseif( $col == 'sidebar' ){
+	elseif( $col == 'main' && $sidebar_size == 'small' ) {
+		echo 10;
+	}
+	elseif( $col == 'main' && $sidebar_size == 'large' ) {
+		echo 8;
+	}
+	elseif( $col == 'main' ) {
+		echo 9;
+	}
+	elseif( $col == 'sidebar' && $sidebar_size == 'small' ) {
+		echo 2;
+	}
+	elseif( $col == 'sidebar' && $sidebar_size == 'large' ) {
+		echo 4;
+	}
+	elseif( $col == 'sidebar' ) {
 		echo 3;
-	}	
+	}
 }
 
 
