@@ -15,7 +15,8 @@
 	    <link rel="apple-touch-icon-precomposed" href="<?php bloginfo( 'template_directory' ); ?>/assets/ico/apple-touch-icon-57-precomposed.png">
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->        
+		<![endif]-->
+		<?php wpstrap_analytics(); ?>
         <?php wp_head(); ?>        
     </head>    
     <body <?php body_class(); ?>>

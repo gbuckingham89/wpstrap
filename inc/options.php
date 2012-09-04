@@ -42,6 +42,13 @@ function wpstrap_options( $key = false ) {
 				array( 'value' => 'medium', 'label' => 'Medium' ),
 				array( 'value' => 'large', 'label' => 'Large' )
 			)		
+		),
+		array(
+			'key' => 'google_analytics_code',
+			'label' => 'Gogole Analytics tracking code',
+			'description' => 'If provided, the default Google Analytics tracking code will be included in the <head>.',
+			'default' => '',
+			'type' => 'text'
 		)
 	);
 	$options['header'] = array(	
