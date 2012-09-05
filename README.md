@@ -4,8 +4,7 @@ WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the
 
 A demo of the theme is available at <http://wpstrap.com/>.
 
-WP Strap is developed by George Buckingham.
-Twitter: [@gbuckingham89](http://www.twitter.com/gbuckingham89). Personal Site: <http://georgebuckingham.com/>.
+WP Strap is developed by George Buckingham ([@gbuckingham89](http://www.twitter.com/gbuckingham89)).
 
 ##Usage and License
 WP Strap is available freely under the GPL license for you to use as you wish. It's always nice hear how it is being used, so please feel free to let me know what you are using it for.
@@ -36,18 +35,18 @@ By default, a search box is shown on the right of the navbar. Through the WP Str
 WP Strap is widget ready - allowing you to add widgets to the sidebar through the WordPress admin area. Additional CSS rules have been added to ensure the default WordPress widgets display nicely.
 
 #Changelog
-##V0.2 - xx/xx/xxxx
+##v0.2 - 05/09/2012
 ###All Changes
 - Added support for post featured images
 - Styled password protected post password form and hid comments from password protected posts until a password has been provided
-- Now Bootstrap only sub-menus one at a time, support has been added for unlimited depth in the navigation menu
+- Now Bootstrap dropdown sub-menus open one at a time, support has been added for unlimited depth in the navigation menu
 - Upgraded Bootstrap assets to v2.1.1
 - Introduced Google Analytics tracking code
 - Added ability to change sidebar width
 - Added full width page template
 - Fixed bug with menu which prevented dropdown from showing
 
-##V0.1 - 28/08/2012
+##v0.1 - 28/08/2012
 ###Highlights
 - First release
 - Styling for most basic WordPress features
