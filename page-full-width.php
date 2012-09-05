@@ -15,7 +15,7 @@ Template Name: Full Width Page
 						<?php the_content(); ?>
 					</div>
 					<?php 
-					if( wpstrap_opt( 'show_page_comments' ) == '1' ) { 
+					if( !post_password_required() && wpstrap_opt( 'show_page_comments' ) == '1' ) { 
 						comments_template();
 					}
 					?>

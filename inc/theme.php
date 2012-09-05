@@ -1,5 +1,24 @@
 <?php
 /**
+ * Modify password protected post form
+ */
+function wpstrap_password_protected_form() {
+    global $post;
+
+    $label = 'pwbox-'.(empty($post->ID) ? rand() : $post->ID);
+    $output = '<div class="alert alert-error alert-block"><p><strong>Sorry, this ';
+    if( $post->post_type=='page' ) {
+	    $output .= 'page';
+    }
+    else if( $post->post_type=='post' ) {
+	    $output .= 'post';
+    }
+    $output .= ' is password protected.</strong> To view it, please enter the required password below.</p><br /><br />&nbsp;<form action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post" class="form-inline" style="margin-bottom:0;"><label for="' . $label . '">Password: <input name="post_password" id="' . $label . '" type="password" size="20" /></label> <button name="Submit" value="1" class="btn">Submit</button></form></div>';
+    return $output;
+}
+add_filter( 'the_password_form', 'wpstrap_password_protected_form' );
+
+/**
  * Include Analytics tracking code
  */
 function wpstrap_analytics() {
