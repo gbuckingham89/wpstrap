@@ -1,5 +1,15 @@
 <?php
 /**
+ * Add support for thumbnails to posts
+ */
+add_theme_support( 'post-thumbnails', array( 'post' ) );  
+
+/**
+ * Add image size for post thumbails in the loop
+ */
+add_image_size( 'featured-loop', 200, 151, true );
+
+/**
  * Modify password protected post form
  */
 function wpstrap_password_protected_form() {
@@ -94,7 +104,7 @@ add_filter( 'image_send_to_editor', 'wpstrap_remove_image_dimensions', 10 );
  * Increase excerpt length
  */
 function wpstrap_excerpt_length( $length ) {
-	return 71;
+	return 68;
 }
 add_filter( 'excerpt_length', 'wpstrap_excerpt_length', 999 );
 

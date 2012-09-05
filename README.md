@@ -37,7 +37,8 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 
 #Changelog
 ##V0.2 - xx/xx/xxxx
-###Highlights
+###All Changes
+- Added support for post featured images
 - Styled password protected post password form and hid comments from password protected posts until a password has been provided
 - Now Bootstrap only sub-menus one at a time, support has been added for unlimited depth in the navigation menu
 - Upgraded Bootstrap assets to v2.1.1

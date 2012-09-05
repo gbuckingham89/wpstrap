@@ -18,6 +18,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 /**
+ * Clearers
+ */
+.cl {
+	clear: both;
+}
+
+/**
  * Handle navbar body padding + navbar with admin bar fix
  */
 @media (min-width: 980px) {
@@ -76,6 +83,9 @@ body.admin-bar .navbar {
 #sidebar ul ul {
 	margin: 0 0 25px 25px;
 	list-style-type: disc;
+}
+#sidebar ul ul ul, #sidebar ul ul ul ul, #sidebar ul ul ul ul ul {
+	margin-bottom: 0;
 }
 #sidebar .widget_calendar table {
 	.table;
@@ -138,4 +148,17 @@ body.admin-bar .navbar {
 }
 .comments-wrap .alert {
 	margin: 0;
+}
+
+/**
+ * Loop featured image
+ */
+.loop-featured-image {
+	display: block;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.loop-featured-image img {
+	width: 200px;
+	height: 151px;
 }

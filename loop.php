@@ -5,8 +5,8 @@
 			<div class="wysiwyg">
 				<?php the_excerpt(); ?>
 			</div>				
-		</div>		
-		<hr />		
+		</div>
+		<hr class="cl" />
 	<?php endwhile; ?>	
 	<ul class="pager">
 		<li class="previous">
