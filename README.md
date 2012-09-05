@@ -1,6 +1,6 @@
 #WP Strap - V0.1
 ##Overview
-WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the [Bootstrap](http://www.getbootstrap.com) framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to support WordPress features. It is still a work in progress and not all WordPress features are supported yet, however it will continually be expanded with new features and support for the latest versions of WordPress and Bootstrap as they’re released. If you spot something that isn't included that you think should be, please check [the issues](https://github.com/gbuckingham89/wpstrap/issues?state=open) and submit one if needed.
+WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the [Bootstrap](http://www.getbootstrap.com) framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to support WordPress features. It is still a work in progress, however it will continually be expanded with new features and support for the latest versions of WordPress and Bootstrap as they’re released. If you spot something that isn't included that you think should be, please check [the issues](https://github.com/gbuckingham89/wpstrap/issues?state=open) and submit one if needed.
 
 A demo of the theme is available at <http://wpstrap.com/>.
 
@@ -38,6 +38,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 #Changelog
 ##V0.2 - xx/xx/xxxx
 ###Highlights
+- Styled password protected post password form and hid comments from password protected posts until a password has been provided
 - Now Bootstrap only sub-menus one at a time, support has been added for unlimited depth in the navigation menu
 - Upgraded Bootstrap assets to v2.1.1
 - Introduced Google Analytics tracking code
