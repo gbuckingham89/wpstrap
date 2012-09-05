@@ -201,7 +201,7 @@ function wpstrap_header_classes() {
 function wpstrap_header_menu() {
 	$args = array(
 	    'theme_location' => 'header-menu',
-	    'depth' => 3,
+	    'depth' => 0,
 	    'container' => false,
 	    'menu_class' => 'nav',
 	    'walker' => new WPStrap_Header_Menu_Walker()
@@ -236,7 +236,7 @@ class WPStrap_Header_Menu_Walker extends Walker_Nav_Menu {
 		$classes[] = ( $args->has_children ) ? 'dropdown' : '';
 		$classes[] = ( $item->current || $item->current_item_ancestor) ? 'active' : '';
 		$classes[] = 'menu-item-' . $item->ID;
-		if( $depth == 1 && $args->has_children ) {
+		if( $depth >= 1 && $args->has_children ) {
 			$classes[] = "dropdown-submenu";
 		}
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
@@ -251,7 +251,7 @@ class WPStrap_Header_Menu_Walker extends Walker_Nav_Menu {
 		$output .= '<li' . $id . $value . $class_names . $li_attributes . '>';
 
 		// Setup link attributes if the link has a dropdown submenu
-		if( $depth == 1 && $args->has_children ) {
+		if( $depth >= 1 && $args->has_children ) {
 			$attributes  = !empty( $item->title ) ? ' title="' . esc_attr( $item->title ) .'"' : '';
 			$attributes .= !empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : ' href="#"';
 			$attributes .= ' tabindex="-1"';

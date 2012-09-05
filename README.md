@@ -27,7 +27,7 @@ An options page is provided in the WordPress admin area under the appearance men
 The standard Bootstrap Navbar is displayed at the top of every page. From the WP Strap Options, the background colour of the navbar can be controlled - with the Bootstrap white and black (inverse) options available.
 
 ###Navbar Navigation Menu
-WP Strap makes use of the WordPress menus feature and the Bootstrap navbar links to display a navigation menu in the navbar. To achieve this, WP Strap uses a custom WordPress nav walker object to construct the required HTML structure. The navigation menu supports up to three levels of navigation using the standard Bootstrap dropdown menus. If no menu is defined within the WordPress admin area, no menu will be shown.
+WP Strap makes use of the WordPress menus feature and the Bootstrap navbar links to display a navigation menu in the navbar. To achieve this, WP Strap uses a custom WordPress nav walker object to construct the required HTML structure. The navigation menu supports unlimited levels of navigation using the standard Bootstrap dropdown menus. If no menu is defined within the WordPress admin area, no menu will be shown.
 
 ###Navbar Search Box
 By default, a search box is shown on the right of the navbar. Through the WP Strap options page in the WordPress admin area, this search box can also be aligned to left or hidden altogether. It is contained within the responsive area, so it will get hidden on devices with a smaller screen resolution.
@@ -38,6 +38,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 #Changelog
 ##V0.2 - xx/xx/xxxx
 ###Highlights
+- Now Bootstrap only sub-menus one at a time, support has been added for unlimited depth in the navigation menu
 - Upgraded Bootstrap assets to v2.1.1
 - Introduced Google Analytics tracking code
 - Added ability to change sidebar width
