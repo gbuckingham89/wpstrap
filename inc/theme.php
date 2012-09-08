@@ -1,5 +1,10 @@
 <?php
 /**
+ * Add feed links
+ */
+add_theme_support( 'automatic-feed-links' );
+
+/**
  * Add support for thumbnails to posts
  */
 add_theme_support( 'post-thumbnails', array( 'post' ) );  

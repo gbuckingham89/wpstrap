@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-    <head>        
-        <title><?php is_front_page() ? bloginfo( 'description' ) : wp_title( '' ); ?> | <?php bloginfo( 'name' ); ?></title>
+    <head>   
+	    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	    <title><?php is_front_page() ? bloginfo( 'description' ) : wp_title( '' ); ?> | <?php bloginfo( 'name' ); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="<?php bloginfo( 'charset' ); ?>">        
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
