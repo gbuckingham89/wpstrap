@@ -48,6 +48,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 -- Labels (span.label)
 -- Badages (span.badage)
 - Introduced support for multi-page posts with wp_link_posts()
+- Fixed PHP warnings in comments.php
 
 ##v0.2 - 05/09/2012
 ###All Changes
