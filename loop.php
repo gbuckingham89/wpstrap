@@ -10,10 +10,10 @@
 	<?php endwhile; ?>	
 	<ul class="pager">
 		<li class="previous">
-			<?php next_posts_link('&lt; Older Posts'); ?>
+			<?php next_posts_link( '&lt; Older Posts' ); ?>
 		</li>
 		<li class="next">
-			<?php previous_posts_link('Newer Posts &gt;'); ?>
+			<?php previous_posts_link( 'Newer Posts &gt;' ); ?>
 		</li>
 	</ul>				
 <?php endif; ?>

@@ -6,11 +6,11 @@ function wpstrap_link_pages() {
 	
 	// Set args and get standard WP markup for wp_link_pages
 	$args = array(
-		'before' => '<hr /><div class="pagination"><ul><a href="#">Page:</a>',
-		'after' => '</ul></div><hr />',
-		'next_or_number' => 'number',
-		'pagelink' => '%',
-		'echo' => 0
+		'before' 			=> '<hr /><div class="pagination"><ul><a href="#">Page:</a>',
+		'after' 			=> '</ul></div><hr />',
+		'next_or_number' 	=> 'number',
+		'pagelink' 			=> '%',
+		'echo' 				=> 0
 	);
 	$page_links = wp_link_pages( $args );	
 	
@@ -59,13 +59,12 @@ add_image_size( 'featured-loop', 200, 151, true );
  */
 function wpstrap_password_protected_form() {
     global $post;
-
-    $label = 'pwbox-'.(empty($post->ID) ? rand() : $post->ID);
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $output = '<div class="alert alert-error alert-block"><p><strong>Sorry, this ';
-    if( $post->post_type=='page' ) {
+    if( $post->post_type == 'page' ) {
 	    $output .= 'page';
     }
-    else if( $post->post_type=='post' ) {
+    else if( $post->post_type == 'post' ) {
 	    $output .= 'post';
     }
     $output .= ' is password protected.</strong> To view it, please enter the required password below.</p><br /><br />&nbsp;<form action="' . get_option('siteurl') . '/wp-login.php?action=postpass" method="post" class="form-inline" style="margin-bottom:0;"><label for="' . $label . '">Password: <input name="post_password" id="' . $label . '" type="password" size="20" /></label> <button name="Submit" value="1" class="btn">Submit</button></form></div>';
@@ -78,7 +77,7 @@ add_filter( 'the_password_form', 'wpstrap_password_protected_form' );
  */
 function wpstrap_analytics() {
 	$google_analytics = wpstrap_opt( 'google_analytics_code' );	
-	if( !empty( $google_analytics) ) {
+	if( !empty( $google_analytics ) ) {
 		?>
 			<script type="text/javascript">
 			  var _gaq = _gaq || [];
@@ -112,10 +111,10 @@ function wpstrap_comments_title() {
  */
 function wpstrap_register_widgets() {
 	register_sidebar( array(
-		'name' => 'Sidebar Widgets',
-		'id' => 'sidebar-widgets',
-		'before_title' => '<h4>',
-		'after_title' => '</h4>'
+		'name' 			=> 'Sidebar Widgets',
+		'id' 			=> 'sidebar-widgets',
+		'before_title' 	=> '<h4>',
+		'after_title' 	=> '</h4>'
 	) );
 }
 add_action( 'widgets_init', 'wpstrap_register_widgets' );
@@ -226,8 +225,8 @@ function wpstrap_breadcrumbs_page() {
 			while( $current_page->post_parent > 0 ) {			
 				$current_page = get_post( $current_page->post_parent );
 				$breadcrumbs[] = array(
-					'name' => $current_page->post_title,
-					'url' => esc_url( get_permalink( $current_page->ID ) )
+					'name' 	=> $current_page->post_title,
+					'url' 	=> esc_url( get_permalink( $current_page->ID ) )
 				);
 			}			
 			$breadcrumbs = array_reverse( $breadcrumbs );		
@@ -273,11 +272,11 @@ function wpstrap_header_classes() {
  */
 function wpstrap_header_menu() {
 	$args = array(
-	    'theme_location' => 'header-menu',
-	    'depth' => 0,
-	    'container' => false,
-	    'menu_class' => 'nav',
-	    'walker' => new WPStrap_Header_Menu_Walker()
+	    'theme_location' 	=> 'header-menu',
+	    'depth' 			=> 0,
+	    'container' 		=> false,
+	    'menu_class' 		=> 'nav',
+	    'walker' 			=> new WPStrap_Header_Menu_Walker()
 	);
 	wp_nav_menu( $args );
 }

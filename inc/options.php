@@ -5,19 +5,19 @@
 function wpstrap_options_groups() {
 	$groups = array(
 		array( 
-			'key' => 'generic', 
+			'key' 	=> 'generic', 
 			'title' => 'Generic Options' 
 		),
 		array( 
-			'key' => 'header', 
+			'key' 	=> 'header', 
 			'title' => 'Navbar Options' 
 		),
 		array( 
-			'key' => 'page', 
+			'key' 	=> 'page', 
 			'title' => 'Page Options' 
 		),
 		array( 
-			'key' => 'post', 
+			'key' 	=> 'post', 
 			'title' => 'Post Options' 
 		)
 	);
@@ -32,61 +32,94 @@ function wpstrap_options( $key = false ) {
 	$options = array();
 	$options['generic'] = array(	
 		array(
-			'key' => 'sidebar_size',
-			'label' => 'Sidebar size',
-			'description' => '',
-			'default' => 'medium',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => 'small', 'label' => 'Small' ),
-				array( 'value' => 'medium', 'label' => 'Medium' ),
-				array( 'value' => 'large', 'label' => 'Large' )
+			'key' 			=> 'sidebar_size',
+			'label' 		=> 'Sidebar size',
+			'description' 	=> '',
+			'default' 		=> 'medium',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => 'small', 
+					'label' => 'Small' 
+				),
+				array( 
+					'value' => 'medium', 
+					'label' => 'Medium'
+				),
+				array( 
+					'value' => 'large', '
+					label' => 'Large'
+				)
 			)		
 		),
 		array(
-			'key' => 'google_analytics_code',
-			'label' => 'Gogole Analytics tracking code',
-			'description' => 'If provided, the default Google Analytics tracking code will be included in the <head>.',
-			'default' => '',
-			'type' => 'text'
+			'key' 			=> 'google_analytics_code',
+			'label' 		=> 'Gogole Analytics tracking code',
+			'description' 	=> 'If provided, the default Google Analytics tracking code will be included in the <head>.',
+			'default' 		=> '',
+			'type' 			=> 'text'
 		)
 	);
 	$options['header'] = array(	
 		array(
-			'key' => 'show_header_search',
-			'label' => 'Show seach box',
-			'description' => '',
-			'default' => 'right',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => 'right', 'label' => 'Yes - Right' ),
-				array( 'value' => 'left', 'label' => 'Yes - Left' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_header_search',
+			'label' 		=> 'Show seach box',
+			'description' 	=> '',
+			'default' 		=> 'right',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => 'right', 
+					'label' => 'Yes - Right'
+				),
+				array( 
+					'value' => 'left', 
+					'label' => 'Yes - Left'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		),
 		array(
-			'key' => 'header_colour',
-			'label' => 'Header colour',
-			'description' => '',
-			'default' => 'white',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => 'white', 'label' => 'White' ),
-				array( 'value' => 'black', 'label' => 'Black' )
+			'key' 			=> 'header_colour',
+			'label' 		=> 'Header colour',
+			'description' 	=> '',
+			'default' 		=> 'white',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => 'white', 
+					'label' => 'White'
+				),
+				array( 
+					'value' => 'black', 
+					'label' => 'Black'
+				)
 			)		
 		)
 	);
 	$options['page'] = array(	
 		array(
-			'key' => 'show_page_breadcrumbs',
-			'label' => 'Show breadcrumb navigation',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Yes - all pages' ),
-				array( 'value' => '2', 'label' => 'Yes - child pages only' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_page_breadcrumbs',
+			'label' 		=> 'Show breadcrumb navigation',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options'		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes - all pages'
+				),
+				array( 
+					'value' => '2', 
+					'label' => 'Yes - child pages only'
+				),
+				array(
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		),
 		array(
@@ -103,62 +136,98 @@ function wpstrap_options( $key = false ) {
 			)		
 		),
 		array(
-			'key' => 'show_page_author',
-			'label' => 'Show page author',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Yes' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_page_author',
+			'label' 		=> 'Show page author',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		),
 		array(
-			'key' => 'show_page_comments',
-			'label' => 'Show comments list &amp; form',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Yes' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_page_comments',
+			'label'			=> 'Show comments list &amp; form',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		)
 	);
 	$options['post'] = array(	
 		array(
-			'key' => 'show_post_date_time',
-			'label' => 'Show post date / time',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Date &amp; Time' ),
-				array( 'value' => '2', 'label' => 'Date Only' ),
-				array( 'value' => '3', 'label' => 'Time Only' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_post_date_time',
+			'label' 		=> 'Show post date / time',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Date &amp; Time'
+				),
+				array( 
+					'value' => '2',
+					'label' => 'Date Only'
+				),
+				array( 
+					'value' => '3', 
+					'label' => 'Time Only'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		),
 		array(
-			'key' => 'show_post_author',
-			'label' => 'Show post author',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Yes' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_post_author',
+			'label'			=> 'Show post author',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		),
 		array(
-			'key' => 'show_post_comments',
-			'label' => 'Show comments list &amp; form',
-			'description' => '',
-			'default' => '1',
-			'type' => 'select',
-			'options' => array(
-				array( 'value' => '1', 'label' => 'Yes' ),
-				array( 'value' => '0', 'label' => 'No' )
+			'key' 			=> 'show_post_comments',
+			'label' 		=> 'Show comments list &amp; form',
+			'description' 	=> '',
+			'default'		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
 			)		
 		)
 	);
@@ -360,7 +429,4 @@ function wpstrap_options_page() {
 	</div>
 	<?php
 }
-
-
-
 ?>
