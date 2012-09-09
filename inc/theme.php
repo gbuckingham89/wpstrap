@@ -1,5 +1,10 @@
 <?php
 /**
+ * Add editor stylesheet
+ */
+add_editor_style('editor-style.css');
+
+/**
  * Add feed links
  */
 add_theme_support( 'automatic-feed-links' );

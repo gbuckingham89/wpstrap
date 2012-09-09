@@ -40,6 +40,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Increased spacing above comments box
 - Reordered <head> elements to output charset before title tag
 - Added theme support for feed links
+- Added editor-style.css to style content in the editor
 
 ##v0.2 - 05/09/2012
 ###All Changes

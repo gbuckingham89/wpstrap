@@ -1,0 +1,5 @@
+/* Import main stylesheet for us in the editor */
+@import url("style.css");
+body {
+	padding: 10px;
+}
