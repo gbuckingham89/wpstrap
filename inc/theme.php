@@ -125,14 +125,24 @@ add_action( 'widgets_init', 'wpstrap_register_widgets' );
  * Registers and enqueues JavaScript files for the front end.
  */
 function wpstrap_scripts() {
+
+	// Dergisters & register JavaScript files
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.7.2.min.js' );
-    wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js') ;
+    wp_register_script( 'wpstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js') ;
+    
+    // Enqueue JavaScript files
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'bootstrap' );
+    wp_enqueue_script( 'wpstrap-bootstrap' );
+    
+    // Register CSS files
+    wp_register_style( 'wpstrap-style', get_bloginfo( 'stylesheet_url' ) );
+    
+    // Enqueue CSS files
+    wp_enqueue_style( 'wpstrap-style' );  
+    
 }   
 add_action( 'wp_enqueue_scripts', 'wpstrap_scripts' );
-
 
 /**
  * Remove fixed height and widths from images
