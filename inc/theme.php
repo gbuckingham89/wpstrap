@@ -145,17 +145,6 @@ function wpstrap_scripts() {
 add_action( 'wp_enqueue_scripts', 'wpstrap_scripts' );
 
 /**
- * Remove fixed height and widths from images
- */
-function wpstrap_remove_image_dimensions( $html ) {
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    return $html;
-}
-add_filter( 'post_thumbnail_html', 'wpstrap_remove_image_dimensions', 10 );
-add_filter( 'image_send_to_editor', 'wpstrap_remove_image_dimensions', 10 );
-
-
-/**
  * Increase excerpt length
  */
 function wpstrap_excerpt_length( $length ) {

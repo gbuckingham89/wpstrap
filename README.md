@@ -50,6 +50,8 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Introduced support for multi-page posts with wp_link_posts()
 - Fixed PHP warnings in comments.php
 - Removed link to stylesheet from <head> and replaced with wp_register_style() and wp_enqueue_style()
+- Stopped styling all images in the_content() with .thumbnail by default
+- Added /modified styling for core WordPress CSS classes (.aligncenter, .alignleft, .alignright, .wp-caption, .wp-caption-text, .gallery-caption, .sticky, .bypostauthor)
 
 ##v0.2 - 05/09/2012
 ###All Changes

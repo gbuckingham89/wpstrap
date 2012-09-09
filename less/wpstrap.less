@@ -54,23 +54,54 @@ body.admin-bar .navbar {
 }
 
 /**
- * Styling for text from the wysiwyg editor
+ * Core WordPress styling classes
  */
-.wysiwyg img.alignleft {
+.alignleft {
 	float: left;
 	margin: 5px 10px 5px 0;
 }
-.wysiwyg img.alignright {
+.alignright {
 	float: right;
 	margin: 5px 0 5px 10px;
 }
-.wysiwyg img.aligncenter {
+.aligncenter {
 	float: none;
 	margin: 5px auto;
 	display: block;
+	text-align: center;
 }
-.wysiwyg img {
-	.thumbnail;
+.wp-caption {
+	.well;
+	.well-small;
+	img {
+		margin: 5px;
+	}
+	img.thumbnail {
+		margin: 0;
+	}
+}
+.wp-caption-text {
+	margin: 10px 0 0 0;
+	padding: 0;
+	text-align: center;
+	line-height: normal;
+	font-size: 85%;
+}
+.gallery-caption {
+	.well;
+	.well-small;
+	img {
+		margin: 5px;
+	}
+	img.thumbnail {
+		margin: 2px;
+	}
+}
+.bypostauthor {
+	
+}
+.sticky {
+	
 }
 
 /**

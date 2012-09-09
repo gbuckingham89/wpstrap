@@ -18,6 +18,12 @@ function wpstrap_add_tinymce_styles( $settings ) {
   
     $style_formats = array(  
         array(  
+            'title' => 'Image Thumbnail',  
+            'selector' => 'img',  
+            'classes' => 'thumbnail',
+            'wrapper' => false
+        ), 
+        array(  
             'title' => 'Lead Paragraph',  
             'block' => 'p',  
             'classes' => 'lead',
