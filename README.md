@@ -52,6 +52,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Removed link to stylesheet from <head> and replaced with wp_register_style() and wp_enqueue_style()
 - Stopped styling all images in the_content() with .thumbnail by default
 - Added /modified styling for core WordPress CSS classes (.aligncenter, .alignleft, .alignright, .wp-caption, .wp-caption-text, .gallery-caption, .sticky, .bypostauthor)
+- Renamed page-full-width.php to full-width-page.php to comply with WordPress theme review recommendations
 
 ##v0.2 - 05/09/2012
 ###All Changes
