@@ -7,9 +7,9 @@ A demo of the theme is available at <http://wpstrap.com/>.
 WP Strap is developed by George Buckingham ([@gbuckingham89](http://www.twitter.com/gbuckingham89)).
 
 ##Usage and License
-WP Strap is available freely under the GPL license for you to use as you wish. It's always nice hear how it is being used, so please feel free to let me know what you are using it for.
+WP Strap is available freely under the GPL license for you to use as you wish. It's always nice hear how it is being used, so please feel free to let me know what you are using it for. It is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom.
 
-It also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
+The theme also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
 
 ##Features
 

@@ -1,13 +1,14 @@
 /*!
 Theme Name: WP Strap
 Theme URI: http://wpstrap.com/
-Description: WP Strap is an open-source WordPress theme using the Bootstrap framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to support WordPress features. It is still a work in progress and not all WordPress features are supported yet, however it will continually be expanded with new features and support for the latest versions of WordPress and Bootstrap as they’re released.
 Author: George Buckingham
 Author URI: http://georgebuckingham.com/
+Description: WP Strap is an open-source WordPress theme using the Bootstrap framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to support WordPress features. It is still a work in progress and not all WordPress features are supported yet, however it will continually be expanded with new features and support for the latest versions of WordPress and Bootstrap as they’re released.
 Version: 0.1
-Tags: theme-options, custom-menu, fixed-width, right-sidebar, blue, white, gray
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: theme-options, custom-menu, fixed-width, right-sidebar, blue, white, gray
+Text Domain: wpstrap
 *//*!
  * Bootstrap v2.1.1
  *
