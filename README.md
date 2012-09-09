@@ -54,6 +54,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Added /modified styling for core WordPress CSS classes (.aligncenter, .alignleft, .alignright, .wp-caption, .wp-caption-text, .gallery-caption, .sticky, .bypostauthor)
 - Renamed page-full-width.php to full-width-page.php to comply with WordPress theme review guidelines
 - Changed options prefix from 'wpstrap_' to 'wpstrap-' to comply with WordPress theme review guidelines
+- Updated theme options page to use selected() method for apply selected="selected"
 
 ##v0.2 - 05/09/2012
 ###All Changes

@@ -278,11 +278,7 @@ function wpstrap_draw_options_field_select( $option ) {
 	<select style="width:350px;margin-right:0;" id="wpstrap_<?php echo $option['key']; ?>" name="wpstrap_<?php echo $option['key']; ?>">
 		<?php
 		foreach( $option['options'] as $option_option ) {
-			echo '<option';
-			if( wpstrap_opt( $option['key'] ) == $option_option['value'] ) {
-				echo ' selected="selected"';
-			}
-			echo' value="' . $option_option['value'] . '">' . $option_option['label'] . '</option>';	
+			echo '<option' . selected( wpstrap_opt( $option['key'] ), $option_option['value'], false ) . ' value="' . $option_option['value'] . '">' . $option_option['label'] . '</option>';	
 		}
 		?>
 	</select>	
