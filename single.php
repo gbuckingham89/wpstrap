@@ -8,7 +8,8 @@
 					<?php wpstrap_old_warning(); ?>
 					<div class="wysiwyg">
 						<?php the_content(); ?>
-					</div>		
+					</div>	
+					<?php wpstrap_link_pages(); ?>	
 					<?php 
 					if( !post_password_required() && wpstrap_opt( 'show_post_comments' ) == '1' ) { 
 						comments_template();

@@ -9,6 +9,7 @@
 					<div class="wysiwyg">
 						<?php the_content(); ?>
 					</div>
+					<?php wpstrap_link_pages(); ?>
 					<?php 
 					if( !post_password_required() && wpstrap_opt( 'show_page_comments' ) == '1' ) { 
 						comments_template();

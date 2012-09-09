@@ -1,5 +1,40 @@
 <?php
 /**
+ * wp_link_pages wrapper
+ */
+function wpstrap_link_pages() {
+	
+	// Set args and get standard WP markup for wp_link_pages
+	$args = array(
+		'before' => '<hr /><div class="pagination"><ul><a href="#">Page:</a>',
+		'after' => '</ul></div><hr />',
+		'next_or_number' => 'number',
+		'pagelink' => '%',
+		'echo' => 0
+	);
+	$page_links = wp_link_pages( $args );	
+	
+	// Wrap linked page numbers elements with li
+	$page_links = str_ireplace( '</a>', '</a></li>', str_ireplace( '<a', '<li><a', $page_links ) );
+	
+	// Add disabled class to first link element
+	$page_links = str_ireplace( '<ul><li><a', '<ul><li class="disabled"><a onclick="return false;"', $page_links );
+		
+	// Wrap non-linked page numbers with <li> and <a> (in middle)
+	$page_links = preg_replace( '^\<\/li\>\s(\d)\s\<li\>^', '</li><li class="active"><a href="">${1}</a></li><li>', $page_links) ;
+	
+	// Wrap non-linked page numbers with <li> and <a> (at end)
+	$page_links = preg_replace( '^\<\/li\>\s(\d)\<\/ul\>^', '</li><li class="active"><a href="">${1}</a></li></ul>', $page_links );
+	
+	// Add title tag to all link elements
+	$page_links = preg_replace( '^"\>(\d)\<\/a\>^', '" title="Page ${1}">${1}</a>', $page_links );
+	
+	// Display the page links
+	echo $page_links;
+	
+}
+
+/**
  * Add editor stylesheet
  */
 add_editor_style('editor-style.css');

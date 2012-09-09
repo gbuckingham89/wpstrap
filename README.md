@@ -47,6 +47,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 -- Wells (div.well)
 -- Labels (span.label)
 -- Badages (span.badage)
+- Introduced support for multi-page posts with wp_link_posts()
 
 ##v0.2 - 05/09/2012
 ###All Changes
