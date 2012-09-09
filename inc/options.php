@@ -317,27 +317,19 @@ function wpstrap_options_create() {
 		}
 	}	
 }
-
- 
-/**
- * When the theme is activated (theme switched)
- */
-if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' && get_current_theme() == 'WP Strap' ) {	
-	wpstrap_options_create();	
-}
-
+wpstrap_options_create();
 
 /**
  * Wrapper functions for accessing options 
  */
 function wpstrap_add_option( $key, $value ) {
-	return add_option( 'wpstrap_' . $key, $value );
+	return add_option( 'wpstrap-' . $key, $value );
 }
 function wpstrap_update_option( $key, $value ) {
-	return update_option( 'wpstrap_' . $key, $value );
+	return update_option( 'wpstrap-' . $key, $value );
 }
 function wpstrap_opt( $key, $value = false ) {
-	return get_option( 'wpstrap_' . $key, $value );
+	return get_option( 'wpstrap-' . $key, $value );
 }
 
 
