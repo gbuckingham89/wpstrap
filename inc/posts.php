@@ -98,22 +98,24 @@ function wpstrap_loop_header( $type = 'post' ) {
 			}
 			echo '</p>';
 			} 
-			echo '<p class="post-title-meta">';
-			$something_shown = false;
-			if( $type = 'post' ) {
-				if( $something_shown ) {
-					echo ' <span class="sep">|</span> ';
-				}
-				echo '<i class="icon-bookmark"></i> ';
-				$something_shown = true;
-				the_category( ', ' );
-				if( has_tag() ) { 
+				if( $type == 'post' ) {
+				echo '<p class="post-title-meta">';
+				$something_shown = false;
+				if( $type = 'post' ) {
 					if( $something_shown ) {
 						echo ' <span class="sep">|</span> ';
-					}	
+					}
+					echo '<i class="icon-bookmark"></i> ';
 					$something_shown = true;
-					echo '<i class="icon-tags"></i> ';
-					the_tags( '' , ', ', '' );
+					the_category( ', ' );
+					if( has_tag() ) { 
+						if( $something_shown ) {
+							echo ' <span class="sep">|</span> ';
+						}	
+						$something_shown = true;
+						echo '<i class="icon-tags"></i> ';
+						the_tags( '' , ', ', '' );
+					}
 				}
 			}
 			?>			

@@ -60,6 +60,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Added fix to clear floats at the end of a post / page
 - Added option to show / hide warning message about old posts
 - Added single-attachment template and options on the options page for attachments
+- Updated calls to wpstrap functions where a post type is required to use $post->post_type rather than be hard coded
 
 ##v0.2 - 05/09/2012
 ###All Changes

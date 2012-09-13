@@ -1,7 +1,7 @@
 <?php if ( have_posts() ) : ?>	
 	<?php while ( have_posts() ) : the_post(); ?>				
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php wpstrap_loop_header( 'post' ); ?>
+			<?php wpstrap_loop_header( $post->post_type ); ?>
 			<div class="wysiwyg">
 				<?php the_excerpt(); ?>
 			</div>				

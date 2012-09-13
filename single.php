@@ -4,7 +4,7 @@
 		<?php if ( have_posts() ) : ?>	
 			<?php while ( have_posts() ) : the_post(); ?>				
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php wpstrap_single_header( 'post' ); ?>
+					<?php wpstrap_single_header( $post->post_type ); ?>
 					<?php wpstrap_old_warning(); ?>
 					<div class="wysiwyg">
 						<?php the_content(); ?>
