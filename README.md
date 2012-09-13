@@ -56,6 +56,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Changed options prefix from 'wpstrap_' to 'wpstrap-' to comply with WordPress theme review guidelines
 - Updated theme options page to use selected() method for apply selected="selected"
 - Tidied code to meet WordPress coding standards
+- Removed front-page.php file (to show default list of blog posts on homepage). Added homepage.php page template for use with a static front page.
 
 ##v0.2 - 05/09/2012
 ###All Changes

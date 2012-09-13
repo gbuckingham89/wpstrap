@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Home Page
+*/
+?>
 <?php get_header(); ?>
 <div class="row">
 	<div class="span<?php wpstrap_col_width( 'main' ); ?>" id="main-col">
