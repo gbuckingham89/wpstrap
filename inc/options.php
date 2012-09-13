@@ -19,6 +19,10 @@ function wpstrap_options_groups() {
 		array( 
 			'key' 	=> 'post', 
 			'title' => 'Post Options' 
+		),
+		array( 
+			'key' 	=> 'attachment', 
+			'title' => 'Attachment Options' 
 		)
 	);
 	return $groups;
@@ -247,6 +251,68 @@ function wpstrap_options( $key = false ) {
 				)
 			)		
 		)
+		
+	);
+	$options['attachment'] = array(	
+		array(
+			'key' 			=> 'show_attachment_date_time',
+			'label' 		=> 'Show date / time',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Date &amp; Time'
+				),
+				array( 
+					'value' => '2',
+					'label' => 'Date Only'
+				),
+				array( 
+					'value' => '3', 
+					'label' => 'Time Only'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
+			)		
+		),
+		array(
+			'key' 			=> 'show_attachment_author',
+			'label'			=> 'Show author',
+			'description' 	=> '',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
+			)		
+		),
+		array(
+			'key' 			=> 'show_attachment_comments',
+			'label' 		=> 'Show comments list &amp; form',
+			'description' 	=> '',
+			'default'		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
+			)		
+		),
 		
 	);
 	

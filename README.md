@@ -59,6 +59,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Removed front-page.php file (to show default list of blog posts on homepage). Added homepage.php page template for use with a static front page.
 - Added fix to clear floats at the end of a post / page
 - Added option to show / hide warning message about old posts
+- Added single-attachment template and options on the options page for attachments
 
 ##v0.2 - 05/09/2012
 ###All Changes
