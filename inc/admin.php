@@ -31,32 +31,32 @@ function wpstrap_add_tinymce_styles( $settings ) {
             'wrapper' 	=> false
         ), 
         array(  
-            'title' 	=> 'Badage (Default)',  
+            'title' 	=> 'Badge (Default)',  
             'inline' 	=> 'span',  
             'classes' 	=> 'badge'
         ),  
         array(  
-            'title' 	=> 'Badage (Success)',  
+            'title' 	=> 'Badge (Success)',  
             'inline' 	=> 'badge',  
             'classes' 	=> 'badge badge-success'
         ),  
         array(  
-            'title' 	=> 'Badage (Warning)',  
+            'title' 	=> 'Badge (Warning)',  
             'inline' 	=> 'span',  
             'classes' 	=> 'badge badge-warning'
         ),  
         array(  
-            'title' 	=> 'Badage (Important)',  
+            'title' 	=> 'Badge (Important)',  
             'inline' 	=> 'span',  
             'classes' 	=> 'badge badge-important'
         ),  
         array(  
-            'title' 	=> 'Badage (Info)',  
+            'title' 	=> 'Badge (Info)',  
             'inline' 	=> 'span',  
             'classes' 	=> 'badge badge-info'
         ),  
         array(  
-            'title' 	=> 'Badage (Inverse)',  
+            'title' 	=> 'Badge (Inverse)',  
             'inline' 	=> 'span',  
             'classes' 	=> 'badge badge-inverse'
         ),    
