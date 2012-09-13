@@ -8,6 +8,7 @@
 					<?php wpstrap_old_warning(); ?>
 					<div class="wysiwyg">
 						<?php the_content(); ?>
+						<div class="cl"></div>
 					</div>	
 					<?php wpstrap_link_pages(); ?>	
 					<?php 

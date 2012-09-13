@@ -13,6 +13,7 @@ Template Name: Home Page
 						<h1><?php bloginfo( 'name' ); ?></h1>
 						<h2><?php bloginfo( 'description' ); ?></h2>
 						<?php the_content(); ?>
+						<div class="cl"></div>
 					</div>
 				</div>				
 			<?php endwhile; ?>			

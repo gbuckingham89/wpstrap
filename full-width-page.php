@@ -13,6 +13,7 @@ Template Name: Full Width Page
 					<?php wpstrap_single_header( 'page' ); ?>
 					<div class="wysiwyg">
 						<?php the_content(); ?>
+						<div class="cl"></div>
 					</div>
 					<?php wpstrap_link_pages(); ?>
 					<?php 

@@ -57,6 +57,7 @@ WP Strap is widget ready - allowing you to add widgets to the sidebar through th
 - Updated theme options page to use selected() method for apply selected="selected"
 - Tidied code to meet WordPress coding standards
 - Removed front-page.php file (to show default list of blog posts on homepage). Added homepage.php page template for use with a static front page.
+- Added fix to clear floats at the end of a post / page
 
 ##v0.2 - 05/09/2012
 ###All Changes
