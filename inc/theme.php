@@ -192,10 +192,12 @@ function wpstrap_col_width( $col ) {
 /*
  * Show an alert if the post is over a eyar old
  */
-function wpstrap_old_warning() {
-	$stamp = strtotime( get_the_date( 'Y-m-d' ) );
-	if( $stamp <= ( time() - 31536000 ) ) {
-		echo '<div class="alert"><strong>Please Note:</strong> This post is over a year old, any information within it may be out-of-date.</div>';
+function wpstrap_old_warning() {	
+	if( wpstrap_opt( 'show_old_post_warning' ) ) {
+		$stamp = strtotime( get_the_date( 'Y-m-d' ) );
+		if( $stamp <= ( time() - 31536000 ) ) {
+			echo '<div class="alert"><strong>Please Note:</strong> This post is over a year old, any information within it may be out-of-date.</div>';
+		}
 	}
 }
 

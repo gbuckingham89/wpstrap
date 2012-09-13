@@ -229,7 +229,25 @@ function wpstrap_options( $key = false ) {
 					'label' => 'No'
 				)
 			)		
+		),
+		array(
+			'key' 			=> 'show_old_post_warning',
+			'label'			=> 'Show old post warning',
+			'description' 	=> 'If a post is over a year old, a warning is shown at the top of the post',
+			'default' 		=> '1',
+			'type' 			=> 'select',
+			'options' 		=> array(
+				array( 
+					'value' => '1', 
+					'label' => 'Yes'
+				),
+				array( 
+					'value' => '0', 
+					'label' => 'No'
+				)
+			)		
 		)
+		
 	);
 	
 	if( $key ) {
