@@ -14,8 +14,8 @@ WP Strap is available under the GPL license. It is completely optional, but if y
 ##Changelog
 ###v0.4 - xx-xx-xx
 ####All Changes
-- Added required WordPress CSS classes (.bypostauthor, .sticky)
-
+- Added rules to WordPress CSS classes (.bypostauthor, .sticky) to ensure they're included in compiled style.css
+- Added a $content_width definition as required by the WordPress theme directory
 
 ###v0.3 - 13-09-2012
 ####All Changes

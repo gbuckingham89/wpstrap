@@ -1,5 +1,10 @@
 <?php
 /**
+ * Define content_width (equal to full width page at largest responsive size)
+ */
+if ( ! isset( $content_width ) ) $content_width = 1170;
+
+/**
  * wp_link_pages wrapper
  */
 function wpstrap_link_pages() {
