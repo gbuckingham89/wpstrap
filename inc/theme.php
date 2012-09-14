@@ -1,5 +1,10 @@
 <?php
 /**
+ * Enqueue comments reply JS
+ */
+if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+
+/**
  * Define content_width (equal to full width page at largest responsive size)
  */
 if ( ! isset( $content_width ) ) $content_width = 1170;
