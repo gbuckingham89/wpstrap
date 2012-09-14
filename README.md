@@ -12,6 +12,11 @@ If you spot any issues, or have any feature requests please feel free to submit 
 WP Strap is available under the GPL license. It is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom. The theme also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
 
 ##Changelog
+###v0.4 - xx-xx-xx
+####All Changes
+- Added required WordPress CSS classes (.bypostauthor, .sticky)
+
+
 ###v0.3 - 13-09-2012
 ####All Changes
 - Increased spacing above comments box
