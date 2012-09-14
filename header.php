@@ -9,7 +9,6 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<?php wpstrap_analytics(); ?>
         <?php wp_head(); ?>        
     </head>    
     <body <?php body_class(); ?>>
