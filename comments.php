@@ -40,17 +40,17 @@
 									    ) 
 			 ),
 		    'comment_field'			=> '<label for="comment">Comment *</label><textarea class="span8" id="comment" name="comment" tabindex="4" aria-required="true"></textarea>',
-		    'must_log_in' 			=> '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s" title="Login">logged in</a> to post a comment.' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post->ID ) ) ) ) . '</p>',
-		    'logged_in_as' 			=> '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%s">%s</a>. <a title="Log out of this account" href="%s">Log out?</a></p>' ), 
+		    'must_log_in' 			=> '<p class="must-log-in">' .  sprintf( 'You must be <a href="%s" title="Login">logged in</a> to post a comment.' , wp_login_url( apply_filters( 'the_permalink', get_permalink( $post->ID ) ) ) ) . '</p>',
+		    'logged_in_as' 			=> '<p class="logged-in-as">' . sprintf( 'Logged in as <a href="%s">%s</a>. <a title="Log out of this account" href="%s">Log out?</a></p>' , 
 		    admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post->ID  ) ) ) ),
-		    'comment_notes_before' 	=> '<p class="comment-notes">Your email address is <em>never</em> published nor shared.' . ( $req ? __( ' Required fields are marked with a *' ) : '' ) . '.</p>',
+		    'comment_notes_before' 	=> '<p class="comment-notes">Your email address is <em>never</em> published nor shared.' . ( $req ? ' Required fields are marked with a *' : '' ) . '.</p>',
 		    'comment_notes_after'	=> '<p>You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:</p><code>' . allowed_tags() . '</code>',
 		    'id_form' 				=> 'commentform',
 		    'id_submit' 			=> 'submit',
-		    'title_reply' 			=> __( 'Leave a Reply' ),
-		    'title_reply_to' 		=> __( 'Leave a Reply to %s' ),
-		    'cancel_reply_link'		=> __( 'Cancel reply' ),
-		    'label_submit' 			=> __( 'Post Comment' )
+		    'title_reply' 			=> 'Leave a Reply',
+		    'title_reply_to' 		=> 'Leave a Reply to %s',
+		    'cancel_reply_link'		=> 'Cancel reply',
+		    'label_submit' 			=> 'Post Comment'
 	    ); 
 	    ?>
 		<?php comment_form( $args ); ?>
