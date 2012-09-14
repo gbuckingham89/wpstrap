@@ -1,4 +1,4 @@
-#WP Strap - v0.3
+#WP Strap - v0.4
 ##Overview
 WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the [Bootstrap](http://www.getbootstrap.com) framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to provide styling for WordPress features. It is an on-going project and will continue to be expanded as well as updated to support the latest versions of Bootstrap and WordPress.
 
@@ -12,7 +12,7 @@ If you spot any issues, or have any feature requests please feel free to submit 
 WP Strap is available under the GPL license. It is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom. The theme also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
 
 ##Changelog
-###v0.4 - xx-xx-xx
+###v0.4 - 14-09-2012
 ####All Changes
 - Added rules to WordPress CSS classes (.bypostauthor, .sticky) to ensure they're included in compiled style.css
 - Added a $content_width definition as required by the WordPress theme directory
