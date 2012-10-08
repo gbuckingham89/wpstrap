@@ -115,9 +115,7 @@ add_action( 'widgets_init', 'wpstrap_register_widgets' );
  */
 function wpstrap_scripts() {
 
-	// Dergisters & register JavaScript files
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.7.2.min.js' );
+	// Register JavaScript files
     wp_register_script( 'wpstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js') ;
     
     // Enqueue JavaScript files
