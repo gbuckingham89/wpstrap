@@ -1,4 +1,4 @@
-#WP Strap - v0.4.1
+#WP Strap - v0.5
 ##Overview
 WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the [Bootstrap](http://www.getbootstrap.com) framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to provide styling for WordPress features. It is an on-going project and will continue to be expanded as well as updated to support the latest versions of Bootstrap and WordPress.
 
@@ -9,9 +9,13 @@ WP Strap is developed by [George Buckingham](http://georgebuckingham.com) ([@gbu
 If you spot any issues, or have any feature requests please feel free to submit them via the GitHub issue tracker.
 
 ##Usage and License
-WP Strap is available under the GPL license. It is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom. The theme also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
+WP Strap is available under the GPL V3 license. It is completely optional, but if you like the theme I would appreciate it if you keep the credit link at the bottom. The theme also includes code from Bootstrap and jQuery projects which use the Apache License and MIT License respectively.
 
 ##Changelog
+###v0.5 - xx-xx-xxxx
+####All Changes
+- Changed licence from GPL V2 to GPL V3
+
 ###v0.4.1 - 14-09-2012
 ####All Changes
 - Removed Google Analytics option to comply with WordPress theme directory
