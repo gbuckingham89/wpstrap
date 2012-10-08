@@ -15,6 +15,7 @@ WP Strap is available under the GPL V3 license. It is completely optional, but i
 ###v0.5 - xx-xx-xxxx
 ####All Changes
 - Changed licence from GPL V2 to GPL V3
+- Added clearer div to search form
 
 ###v0.4.1 - 14-09-2012
 ####All Changes
