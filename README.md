@@ -18,6 +18,7 @@ WP Strap is available under the GPL V3 license. It is completely optional, but i
 - Added clearer div to search form
 - Removed jQuery and replace with bundled WordPress version
 - Removed HTML5Shiv hotlink and included JS script within the theme, included by a wp_head hook
+- Removed searchform.php and placed search form into function, called by get_search_form filter
 
 ###v0.4.1 - 14-09-2012
 ####All Changes

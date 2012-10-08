@@ -240,17 +240,22 @@ function wpstrap_breadcrumbs_page() {
 
 
 /**
+ * Defien the HTML for the search box
+ */
+function wpstrap_searchform($form) {
+	$form = '<form role"search" class="form-search" method="get" action="'. home_url( '/' ) . '"><input name="s" type="text" class="search-query" placeholder="Search" value="' . get_search_query() . '"><button type="submit" class="btn pull-right">Search</button><div class="cl"></div></form>';
+	return $form;
+}
+add_filter( 'get_search_form', 'wpstrap_searchform' );
+
+
+/**
  * Draw the header search box
  */
 function wpstrap_header_search() {
 	$position = wpstrap_opt( 'show_header_search' );
 	if( $position ) { 
-		?>
-		<form class="navbar-search pull-<?php echo $position; ?>" method="get" action="<?php echo home_url( '/' ); ?>">
-			<input name="s" type="text" class="search-query" placeholder="Search" value="<?php the_search_query(); ?>">
-			<button type="submit" class="btn">Search</button>
-		</form>				
-		<?php
+		echo str_ireplace( 'class="form-search"', 'class="navbar-search pull-' . $position . '"', get_search_form( false ) );
 	}
 }
 
