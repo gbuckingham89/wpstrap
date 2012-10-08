@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'wpstrap_register_widgets' );
 function wpstrap_scripts() {
 
 	// Register JavaScript files
-    wp_register_script( 'wpstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js') ;
+    wp_register_script( 'wpstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js' ) ;
     
     // Enqueue JavaScript files
     wp_enqueue_script( 'jquery' );
@@ -130,6 +130,14 @@ function wpstrap_scripts() {
     
 }   
 add_action( 'wp_enqueue_scripts', 'wpstrap_scripts' );
+
+/**
+ * Include HTML5 Shiv for old IE
+ */
+function wpstrap_html5shiv() {
+	echo '<!--[if lt IE 9]><script src="' . get_template_directory_uri() . '/js/html5shiv.min.js' . '"></script><![endif]-->' . "\n";
+}
+add_action( 'wp_head', 'wpstrap_html5shiv' );
 
 /**
  * Increase excerpt length
