@@ -1,8 +1,9 @@
 #WP Strap - v0.4.1
+
+*Due to other commitments, I am no longer developing WP Strap*
+
 ##Overview
 WP Strap is an open-source [WordPress](http://www.wordpress.org) theme using the [Bootstrap](http://www.getbootstrap.com) framework from Twitter. The aim of this theme is to use as much of the default Bootstrap styling as possible, with only minor CSS additions to provide styling for WordPress features. It is an on-going project and will continue to be expanded as well as updated to support the latest versions of Bootstrap and WordPress.
-
-A full feature list and documentation is available at <http://wpstrap.com/>. A demo version of the theme in action is available at <http://demo.wpstrap.com/>.
 
 WP Strap is developed by [George Buckingham](http://georgebuckingham.com) ([@gbuckingham89](http://www.twitter.com/gbuckingham89)).
 
